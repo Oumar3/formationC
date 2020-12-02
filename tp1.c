@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 #include <math.h>
 int main(){
     double a;
@@ -16,8 +16,8 @@ int main(){
     delta=b*b-4*a*c;
 //    printf("%d",sqrt(delta)); 
     if(delta>0){
-        x1=-b-sqrt(delta)/(2*a);
-        x2=-b+sqrt(delta)/(2*a);
+        x1=(-b-sqrt(delta))/(2*a);
+        x2=(-b+sqrt(delta))/(2*a);
         printf("l'equation admet deux solutions x1=%lf et x2=%lf",x1,x2);
     }
     else if(delta==0)
