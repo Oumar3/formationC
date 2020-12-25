@@ -1,5 +1,5 @@
 executable: fonction.o min.o
-	gcc -o executable fonction.o min.o
+gcc -o executable fonction.o min.o
 
 fonction.o: mesfonction.c
 	gcc -o fonction.o -c mesfonction.c
