@@ -1,14 +1,14 @@
 #include <stdio.h>
+   int b=30;
+    int n=10;
+void fonction(int *pt_n,int b){
+    pt_n=&n;
+}
 int main(){
-    int a=10;
-    int *pt_a=&a;
-    // int pt_a=9;
-    // int *pt_a;
-    // pt_a =&pt_a;
-    
-    printf("la valeur de pt_a=%d ET son add=%p ET %p \n",*pt_a,&(pt_a),pt_a);
-
-    printf("la valeur de a=%d ET son add=%p",a,&a);
-
+ 
+   
+    // printf("la valeur de pt_N=%p\n");
+  fonction(&n,b);
+    printf("la valeur de pt_n=%d",*(pt_n));
     return 0 ;
 }
